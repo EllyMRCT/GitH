@@ -1,0 +1,326 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Плавная прокрутка для всего документа */
+        html {
+          scroll-behavior: smooth;
+        }
+    
+    /* Шапка */
+        header {
+          background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+          padding: 15px 40px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: fixed; /* Всегда видна при прокрутке */
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+     
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6a0dad;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 12px;
+    }
+    
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Основной контент должен начинаться ниже шапки */
+        main {
+          margin-top: 80px;
+        }
+
+    
+    /* Блок 1 - Синий фон */
+    .block-1 {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .block-1 h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .block-1 p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+    
+    .btn {
+      background-color: #FF6B35;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #e55a2b;
+      transform: scale(1.05);
+    }
+    
+    /* Блок 2 - Светло-фиолетовый */
+    .block-2 {
+      background-color: #f0e6ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .block-2 h2 {
+      color: #2c3e50;
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+    
+    .cards-glow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 0 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .card-glow {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      color: #333;
+    }
+    
+    .card-glow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(94, 92, 230, 0.3);
+    }
+    
+    .card-glow-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    .card-glow h3 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    
+    .card-glow p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    /* Блок 3 - Фиолетовый */
+    .block-3 {
+      background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .block-3 h2 {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+    
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .card {
+      background: #805293;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 320px;
+      text-align: center;
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .card-icon {
+      font-size: 28px;
+      color: #FFD700;
+      margin-right: 12px;
+      min-width: 32px;
+      text-align: center;
+    }
+    
+    .card-title {
+      color: #FFD700;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .card-description {
+      color: white;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    /* Блок 4 - Светлый фон */
+       .block-4 {
+      padding: 60px 20px;
+      background-color: #ffffff;
+    }
+    
+    .block-4 h2 {
+      color: #2c3e50;
+      font-size: 32px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    
+    .steps-list {
+      list-style: none;
+      max-width: 800px; /* Примерно 2/3 от стандартного листа (1200px) */
+      margin: 0 auto;
+      padding: 0;
+    }
+    
+    .step-item {
+      background: #f8f9ff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      text-align: center; /* Весь блок по центру */
+    }
+    
+    .step-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .step-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .step-number {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+      color: white;
+      border-radius: 50%;
+      line-height: 40px;
+      font-weight: bold;
+      text-align: center;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    
+    .step-text {
+      text-align: left;
+      flex: 1;
+    }
+    
+    .step-title {
+      color: #2c3e50;
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .step-description {
+      color: #666;
+      line-height: 1.6;
+      font-size: 16px;
+      margin: 0;
+    }
+        
+    /* Блок 5 - Фиолетовый */
+    .block-5 {
+      background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .block-5 h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    
+    .block-5-content {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    
+    .quote {
+      font-style: italic;
+      font-size: 16px;
+      margin-top: 30px;
+      padding: 20px 40px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.8;
+    }
+     /* Отступ для секций при прокрутке */
+        section {
+          scroll-margin-top: 80px;
+        }
